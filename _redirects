@@ -1,0 +1,4 @@
+# Redirects and rewrites for Netlify
+# If using Netlify, this file enables SPA routing
+
+/*    /index.html   200

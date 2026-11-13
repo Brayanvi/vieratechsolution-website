@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VieraTechSolution - Soluciones Tecnológicas en Piura, Perú</title>
+    <meta name="description" content="VieraTechSolution: Desarrollo de software a la medida, páginas web profesionales y sistemas de automatización para negocios locales en Piura, Perú.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbe8ff',
+                            200: '#bcf0ff',
+                            300: '#88e4ff',
+                            400: '#4ed3ff',
+                            500: '#00bcd4',
+                            600: '#009aa6',
+                            700: '#007a82',
+                            800: '#005c5e',
+                            900: '#003e3a',
+                        },
+                        teal: {
+                            500: '#0d9488',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 2s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <!-- ===== Navegación ===== -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary-600">VieraTechSolution</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-600 hover:text-primary-600 transition">Inicio</a>
+                    <a href="#servicios" class="text-gray-600 hover:text-primary-600 transition">Servicios</a>
+                    <a href="#casos" class="text-gray-600 hover:text-primary-600 transition">Casos de Éxito</a>
+                    <a href="#precios" class="text-gray-600 hover:text-primary-600 transition">Precios</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-primary-600 transition">Contacto</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-gray-600">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#inicio" class="block px-3 py-2 text-gray-600 hover:text-primary-600">Inicio</a>
+                <a href="#servicios" class="block px-3 py-2 text-gray-600 hover:text-primary-600">Servicios</a>
+                <a href="#casos" class="block px-3 py-2 text-gray-600 hover:text-primary-600">Casos de Éxito</a>
+                <a href="#precios" class="block px-3 py-2 text-gray-600 hover:text-primary-600">Precios</a>
+                <a href="#contacto" class="block px-3 py-2 text-gray-600 hover:text-primary-600">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="inicio" class="bg-gradient-to-b from-primary-50 to-white pt-32 pb-24 lg:pt-48 lg:pb-32">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Haz crecer tu negocio<br class="hidden md:block"/> con tecnología
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                VieraTechSolution crea páginas web y sistemas que generan ventas reales para negocios de Piura.
+                Soluciones rápidas, profesionales y efectivas.
+            </p>
+            <a href="#contacto" class="inline-block bg-primary-600 hover:bg-primary-700 text-white font-medium px-8 py-4 rounded-lg text-lg transition shadow-lg hover:shadow-xl">
+                ¡Agenda tu consulta gratis!
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== Servicios ===== -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Nuestros Servicios</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Soluciones tecnológicas adaptadas a las necesidades de negocios locales
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Páginas Web Profesionales</h4>
+                    <p class="text-gray-600 mb-4">
+                        Landing pages y tiendas en línea diseñadas para convertir visitas en ventas.
+                        Optimizadas para móviles y con tiempos de carga ultra rápidos.
+                    </p>
+                    <ul class="text-sm text-gray-500">
+                        <li>✓ Diseño a medida</li>
+                        <li>✓ SEO básico incluido</li>
+                        <li>✓ Integración con redes sociales</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6M12 4v16M8 7h8M8 11h8"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Sistemas a Medida</h4>
+                    <p class="text-gray-600 mb-4">
+                        Dashboards, APIs y automatizaciones con n8n y herramientas de IA para optimizar procesos.
+                    </p>
+                    <ul class="text-sm text-gray-500">
+                        <li>✓ Automatización completa</li>
+                        <li>✓ Integración con n8n</li>
+                        <li>✓ Uso de IA para procesos</li>
+                    </ul>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7 20h10a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v13a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Soporte y Optimización</h4>
+                    <p class="text-gray-600 mb-4">
+                        Mantenimiento técnico y optimización digital para asegurar tu negocio siempre en línea y creciendo.
+                    </p>
+                    <ul class="text-sm text-gray-500">
+                        <li>✓ Mantenimiento técnico</li>
+                        <li>✓ Monitorización 24/7</li>
+                        <li>✓ Capacitación al equipo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Casos de Éxito ===== -->
+    <section id="casos" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Casos de Éxito</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Transformamos negocios tradicionales de Piura en digitales exitosos
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">Panadería Rosita - Antes</h4>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Negocio tradicional con ventas solo en el local, sin presencia digital.
+                            Control de inventario manual, pedidos por WhatsApp.
+                        </p>
+                        <div class="bg-gray-100 rounded-lg p-4 text-center">
+                            <span class="text-3xl font-bold text-gray-400">S/ 500</span>
+                            <p class="text-sm text-gray-500">Ventas mensuales promedio</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 border-2 border-primary-100">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3">Panadería Rosita - Después</h4>
+                        <p class="text-gray-600 mb-4 text-sm">
+                            Página web con tienda en línea, sistema de pedidos automatizado con n8n,
+                            pagos con Yape y transferencia, y redes sociales integradas.
+                        </p>
+                        <div class="bg-primary-50 rounded-lg p-4 text-center border border-primary-200">
+                            <span class="text-3xl font-bold text-primary-600">S/ 2,500</span>
+                            <p class="text-sm text-gray-600">Ventas mensuales con web + redes</p>
+                            <span class="text-green-600 text-xs font-medium mt-2">↑ 400% crecimiento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Precios ===== -->
+    <section id="precios" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">Planes Simples y Directos</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Sin sorpresas. Precios claros para cada etapa de tu negocio
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plan Básico -->
+                <div class="border-2 border-gray-200 rounded-xl p-6 text-center">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Básico</h4>
+                    <p class="text-gray-600 mb-6">Página web de presentación</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-primary-600">S/ 499</span>
+                        <span class="text-gray-500 text-sm">/único</span>
+                    </div>
+                    <ul class="text-gray-600 text-sm mb-6 space-y-2">
+                        <li>✓ Hasta 5 páginas</li>
+                        <li>✓ Diseño responsive</li>
+                        <li>✓ Dominio gratis 1 año</li>
+                        <li>✓ Hosting compartido 1 año</li>
+                    </ul>
+                </div>
+
+                <!-- Plan Estándar -->
+                <div class="border-2 border-primary-500 rounded-xl p-6 text-center shadow-xl">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -top-4">
+                        <span class="bg-primary-600 text-white px-4 py-1 rounded-full text-xs font-semibold">POPULAR</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3 pt-4">Estándar</h4>
+                    <p class="text-gray-600 mb-6">Landing page + contacto</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-primary-600">S/ 799</span>
+                        <span class="text-gray-500 text-sm">/único</span>
+                    </div>
+                    <ul class="text-gray-600 text-sm mb-6 space-y-2">
+                        <li>✓ Hasta 10 páginas</li>
+                        <li>✓ Formulario de contacto</li>
+                        <li>✓ Integración redes sociales</li>
+                        <li>✓ SEO básico incluido</li>
+                        <li>✓ Soporte 30 días</li>
+                    </ul>
+                    <a href="#contacto" class="bg-primary-600 hover:bg-primary-700 text-white font-medium px-6 py-3 rounded-lg transition">
+                        Elegir este plan
+                    </a>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="border-2 border-gray-200 rounded-xl p-6 text-center">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Profesional</h4>
+                    <p class="text-gray-600 mb-6">Tienda online completa</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-primary-600">Desde S/ 2,500</span>
+                        <span class="text-gray-500 text-sm">+</span>
+                    </div>
+                    <ul class="text-gray-600 text-sm mb-6 space-y-2">
+                        <li>✓ E-commerce personalizado</li>
+                        <li>✓ Carrito de compras</li>
+                        <li>✓ Pasarelas de pago</li>
+                        <li>✓ Dashboard de ventas</li>
+                        <li>✓ Soporte técnico mensual</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section id="contacto" class="py-20 bg-primary-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-900 mb-4">¿Listo para crecer digitalmente?</h3>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Agenda una consulta gratuita y descubre cómo podemos impulsar tu negocio
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-900 mb-4">Datos de Contacto</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l4 4 4-4 4 4 4-4 4 4v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+                                </svg>
+                                <span class="text-gray-600">Calle Ejemplo 123, Piura, Perú</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.682.949v3.28a2 2 0 01-2 2h19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"/>
+                                </svg>
+                                <span class="text-gray-600">+51 912 345 678</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l4 4 4-4 4 4 4-4 4 4v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+                                </svg>
+                                <span class="text-gray-600">contacto@vieratechsolution.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <input type="text" id="name" placeholder="Tu nombre" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="email" id="email" placeholder="Tu email" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="tel" id="phone" placeholder="Tu WhatsApp" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:outline-none">
+                        </div>
+                        <select id="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:outline-none bg-white">
+                            <option value="" disabled selected>¿Qué necesitas?</option>
+                            <option value="web">Página web profesional</option>
+                            <option value="ecommerce">Tienda en línea</option>
+                            <option value="automatizacion">Automatización con n8n</option>
+                            <option value="soporte">Soporte técnico</option>
+                        </select>
+                        <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 rounded-lg transition">
+                            ¡Agendar mi consulta!
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">VieraTechSolution</h4>
+                    <p class="text-gray-400 mb-4">
+                        Soluciones tecnológicas para negocios de Piura y toda la región.
+                        Desarrollo web, automatización y optimización digital.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-semibold text-white mb-4">Enlaces Rápidos</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#inicio" class="hover:text-primary-400">Inicio</a></li>
+                        <li><a href="#servicios" class="hover:text-primary-400">Servicios</a></li>
+                        <li><a href="#casos" class="hover:text-primary-400">Casos de Éxito</a></li>
+                        <li><a href="#precios" class="hover:text-primary-400">Precios</a></li>
+                        <li><a href="#contacto" class="hover:text-primary-400">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-semibold text-white mb-4">Contacto</h5>
+                    <p class="text-sm text-gray-400">
+                        Calle Ejemplo 123<br/>
+                        Piura, Perú<br/>
+                        <span class="mt-2 inline-block">+51 912 345 678</span>
+                    </p>
+                    <p class="text-sm text-gray-400 mt-2">
+                        contacto@vieratechsolution.com
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 VieraTechSolution. Todos los derechos reservados.<br/>
+                Emprendimiento Tecnológico en Piura, Perú</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn?.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const service = document.getElementById('service').value;
+
+                // Create mailto link for quick contact
+                const subject = encodeURIComponent(`Consulta: ${service}`);
+                const body = encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\nWhatsApp: ${phone}\nServicio: ${service}\n\nMensaje: Me gustaría más información sobre este servicio.`);
+
+                window.location.href = `mailto:contacto@vieratechsolution.com?subject=${subject}&body=${body}`;
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu?.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

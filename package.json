@@ -1,0 +1,18 @@
+{
+  "name": "vieratechsolution",
+  "version": "1.0.0",
+  "description": "Sitio web profesional para VieraTechSolution - Soluciones tecnológicas en Piura, Perú",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && echo 'Deploy ready'"
+  },
+  "keywords": ["tecnología", "desarrollo web", "software", "automatización", "Piura"],
+  "author": "VieraTechSolution",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
